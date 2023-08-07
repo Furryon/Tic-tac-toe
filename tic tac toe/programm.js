@@ -15,12 +15,12 @@ block.addEventListener ('click' , function (event) {
      if (event.target && event.target.className == 'block') { 
         if ( hod%2 == 0 ){                                      //Если ход будет чётным, то есть 0,2,4,6, соответственно делится на 2, будет ход нолика.          
     event.target.innerHTML = '0'                                // для этого элемента(event.target) меняем html значение на 0
-        }                                                      // event.target нажимаемый обьект = нажимаемую обьекту с классом block , то
+        }                                                      // event.target нажимаемый обьект 
     else {
         event.target.innerHTML = 'x'
         }
         
-hod ++;
+hod ++;                                                      //Чтобы ход менялся, т.е первый игрок ходил, потом второй
     }
     checkWinner();
     }
